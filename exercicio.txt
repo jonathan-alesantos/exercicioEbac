@@ -1,0 +1,19 @@
+Algoritmo "Hora_de_Acordar"
+Var
+    horaAtual, horaAcordar: inteiro
+
+Inicio
+    Escreva("Digite a hora atual (0-23): ")
+    Leia(horaAtual)
+    
+    Escreva("Digite a hora que deseja acordar (0-23): ")
+    Leia(horaAcordar)
+
+    Se horaAtual < horaAcordar Entao
+        Escreva("Faltam ", horaAcordar - horaAtual, " horas para acordar.")
+    Senao Se horaAtual > horaAcordar Entao
+        Escreva("Você deveria ter acordado há ", horaAtual - horaAcordar, " horas!")
+    Senao
+        Escreva("Já está na hora de acordar!")
+    FimSe
+FimAlgoritmo
